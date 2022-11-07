@@ -1,0 +1,192 @@
+@import "root";
+
+@import "lib/button";
+@import "lib/hero";
+@import "lib/nav";
+@import "lib/form";
+@import "lib/blog";
+@import "lib/pagination";
+@import "lib/to-top";
+
+@import "lib/header";
+@import "lib/page";
+@import "lib/footer";
+@import "lib/reviews";
+@import "lib/carousel";
+@import "lib/telegram-widget";
+@import "lib/timer";
+@import "lib/memberships";
+@import "lib/checkout";
+@import "lib/videos";
+
+@import "pages/contact";
+@import "pages/index";
+@import "pages/courses";
+@import "pages/account";
+
+@import "account/ui.scss";
+
+@import "lib/mui";
+@import "utils";
+
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-face-content);
+  color: #fff;
+  background: var(--clr-black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-face-head);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.blog-post {
+  & p, & h1, & h2, & h3, & h4, & h5, & footer span {
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+  
+
+h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  line-height: 160%;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+h3, h4 {
+  font-weight: 300;
+}
+
+
+h1, h2, h3, h4 {
+  scroll-margin-top: 180px;
+  position: relative;
+}
+
+h2.center:before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+p, li {
+  line-height: 180%;
+  max-width: 65ch;
+}
+
+a {
+  color: var(--clr-gold);
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input {
+  padding: 12px 8px;
+  border-radius: 4px;
+}
+
+label {
+  // margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+blockquote {
+  font-family: var(--font-face-display);
+  font-weight: 400;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-style: italic;
+  position: relative;
+  width: 90%;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  &:before {
+    position: absolute;
+    content: "\"";
+    color: var(--clr-gold);
+    font-size: 3rem;
+    transform: translate(-150%, -1rem);
+  }
+}
+
+main { 
+  min-height: 100vh;
+  height: 100%;
+}
+
+.pageRail {
+    max-width: 1250px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.row-with-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

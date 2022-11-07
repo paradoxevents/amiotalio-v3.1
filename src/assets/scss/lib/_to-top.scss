@@ -1,0 +1,43 @@
+.to-top {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  background: none;
+  
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-face-head);
+
+  font-weight: 900;
+
+  opacity: 0.3;
+  z-index: 10;
+  cursor: pointer;
+
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: 1;
+    border: none;
+    box-shadow: 0;
+  }
+}
+
+.to-top-icon {
+  & svg {
+    height: 32px;
+    width: 32px;
+    background: var(--clr-gold);
+    stroke: #fff;
+    display: grid;
+    place-items: center;
+    padding: 3px 4px;
+    border-radius: 100%;
+    margin-bottom: 12px;  
+  }
+}

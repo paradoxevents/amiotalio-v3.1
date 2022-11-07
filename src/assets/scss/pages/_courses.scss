@@ -1,0 +1,201 @@
+.all-courses-intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.tiers-wrapper {
+  --grad-1: linear-gradient(-20deg, #868f96 0%, #596164 100%);
+  --grad-2: linear-gradient(-20deg, #292b2c 0%, #191c1d 100%);
+  --grad-3: linear-gradient(-20deg, #09203f 0%, #537895 100%); 
+  --grad-4: linear-gradient(-20deg, #9da800 0%, #a5e906 100%);
+  --cols: 3;
+  --rows: 2;
+
+
+  margin-top: 60px;
+  
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 300px);
+  grid-template-areas: "starter elite amio"
+    "advanced elite amio";
+  gap: 16px;
+  padding: 16px;
+  align-items: center;
+  justify-content: stretch;
+  
+  width: 100%;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1200px) {
+    --cols: 2;
+    --rows: 4;
+    grid-template-areas: "starter elite"
+    "advanced elite"
+    "amio amio"
+    "amio amio";
+  }
+
+  @media screen and (max-width: 500px) {
+    --cols: 1;
+    --rows: 4;
+    grid-template-areas: "starter"
+    "advanced"
+    "elite"
+    "amio";
+  }
+}
+
+
+.tier-starter { 
+  grid-area: starter; 
+}
+.tier-advanced { 
+  grid-area: advanced; 
+}
+.tier-elite { 
+  grid-area: elite;   
+}
+.tier-amio { 
+  grid-area: amio; 
+}
+
+.tier {
+  // padding: 36px;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  padding-left: 16px;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+
+  & img { 
+    left: 0;
+    bottom: 0;
+    object-position: right;
+    object-fit: fill !important;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tier-card-image {
+  height: 100%;
+  width: auto;
+
+  & img {
+    width: 200% !important;
+    height: auto !important;
+    object-position: 50% 50& !important;
+    object-fit: fill !important;
+    right: 0 !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  } 
+}
+
+.card-content-wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+  background-image: var(--grad-2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &:hover .card-content {
+    transform: translateX(0);
+  }
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; 
+  top: 0;
+  transform: translateX(100%);
+  transition: transform .4s cubic-bezier(.65,.05,.36,1);
+  
+  padding: 16px;
+  color: var(--clr-black-light);
+  background: #eee;
+
+  // border-left: 8px solid var(--clr-gold);
+
+  text-align: left;
+  font-weight: 200;
+
+  font-size: 0.9rem !important;
+  line-height: 120% !important;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.grad-1 {
+  background-image: var(--grad-1); 
+}
+.grad-2 {
+  background-image: var(--grad-2); 
+}
+.grad-3 {
+  background-image: var(--grad-3); 
+}
+.grad-4 {
+  background-image: var(--grad-4); 
+}
+
+
+.tiers-header {
+  margin-top: 60px;
+}
+.tier-title {
+  font-size: 2rem;
+}
+.tier-small-text {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.tier-title,
+.tier-small-text {
+  transform: rotateZ(45deg) ;
+  transform-origin: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.tier-image {
+  max-height: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.tier-image img { 
+  width: 100%;
+}
+
+.course-intro {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,15 @@
+{
+  "nickname": "jamborski.webdesign",
+  "name": "jamborski.webdesign@gmail.com",
+  "picture": "https://s.gravatar.com/avatar/f501a1f3d72cbdc782570b4c7309c9f8?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fja.png",
+  "updated_at": "2022-01-01T22:30:48.918Z",
+  "email": "jamborski.webdesign@gmail.com",
+  "email_verified": false,
+  "iss": "https://at-university.eu.auth0.com/",
+  "sub": "auth0|61d0d5743994a100688b866b",
+  "aud": "HJsxa5qinC1x5LMjGTcg3b5ljMMm28T0",
+  "iat": 1641076249,
+  "exp": 1641112249,
+  "at_hash": "hfFWdKO0jEEjU9ccriBUtQ",
+  "nonce": "mIJFajHivAlh7Z5k5Gg8ka7nTTIOKeDv"
+}

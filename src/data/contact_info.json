@@ -1,0 +1,34 @@
+{
+  "address": {
+    "line-1": "160 Kemp House",
+    "line-2": "City Road",
+    "city": "London",
+    "postcode": "EC1 2NX",
+    "country": "England"
+  },
+  "phone": {
+    "mobile": "+44 (0) 7452-830-991"
+  },
+  "email": {
+    "team": "team@amiotalio.co.uk",
+    "support": "support@amiotalio.com"
+  },
+  "socials": [
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/amiotalio"
+    },
+    {
+      "name": "tiktok",
+      "url": "https://www.tiktok.com/@amiotalio"
+    },
+    {
+      "name": "snapchat",
+      "url": "https://www.snapchat.com/add/amiotalio"
+    },
+    {
+      "name": "telegram",
+      "url": "https://t.me/amiotalio"
+    }
+  ]
+}

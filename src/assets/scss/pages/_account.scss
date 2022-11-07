@@ -1,0 +1,32 @@
+.redirect-bridge {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.disclaimer {
+  text-align: center !important;
+
+  & p {
+    margin: 30px auto;
+  }
+}
+
+.launch-date {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+.dashboard-seaction {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  padding: 26px;
+
+  color: var(--clr-navy);
+}

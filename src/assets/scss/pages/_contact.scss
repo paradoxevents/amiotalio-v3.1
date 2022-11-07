@@ -1,0 +1,48 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+
+  gap: 60px;
+
+  & section:not(:first-child) {
+    margin-top: 5rem;
+  }
+
+  @media screen and (max-width: 1050px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.business-hours {
+  & div:not(:first-child) {
+    margin-top: 10px;
+  } 
+}
+
+.contact-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-right: 24px;
+}
+
+.contact-details-header {
+  margin-top: 36px;
+}
+
+.map {
+  background-color: #999;
+  display: grid;
+  place-items: center;
+  min-height: 25vh;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+}

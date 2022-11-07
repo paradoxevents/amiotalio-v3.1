@@ -1,0 +1,162 @@
+.hero {
+  min-height: 30vh;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 24px;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: grid;
+  place-items: center;
+
+  position: relative;
+}
+
+.hero-logo {
+  width: 160px;
+  margin-bottom: 24px;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.home-view {
+  min-height: 80vh;
+  padding-top: 200px;
+}
+
+.bg-position-center { background-position: center center; }
+.bg-position-top { background-position: center top; }
+.bg-position-bottom { background-position: center bottom; }
+
+.hero-content {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+
+  & .hero-pretitle {
+    opacity: 0.6;
+  }
+
+  & header {
+    display: grid;
+    place-items: center;
+  }
+
+  & h1, & h2, & p {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  }
+
+  & h1, & h2 {
+    text-align: center;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  & header + div {
+    margin-top: 2rem;
+  }
+
+  & .hero-pre-tagline {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  & .hero-tagline {
+    margin-top: 0;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: var(--clr-orange);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-content {
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & h2 {
+      font-size: 1.8rem;
+      margin-top: 0.5rem;
+    }
+
+    & .hero-pre-tagline {
+      font-size: 1.5rem;
+    }
+    & .hero-tagline {
+      font-size: 2rem;
+    }
+  }
+}
+
+
+.hero-footer {
+  margin-bottom: -50px;
+  width: 100%;
+  // min-height: 100px;
+  padding: 20px;
+  // position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag-box {
+  --background: rgb(31, 78, 105);
+  --color: #fff;
+
+  --stagger-delay: 0.3s;
+  --duration-change: 0.4s;
+
+  background-size: 200% auto;
+  text-align: center;
+  font-size: 0.8rem;
+  
+  word-break: keep-all;
+
+  color: white;            
+
+  background-position: 0% 50%;
+
+  margin-bottom: 10px;
+
+  padding: 10px 20px;
+  background: var(--background);
+
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.header-gtc {
+  font-size: 1.8rem;
+  color: var(--clr-orange);
+  font-weight: 500;
+}

@@ -1,0 +1,85 @@
+{
+  "nav-items": [
+    {
+      "label": "Home",
+      "path": "/",
+      "renderAs": "menu-item",
+      "includeInNav": true,
+      "external": false,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Blog",
+      "path": "/blog",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": false,
+      "footerSection": "hidden",
+      "isLocked": false
+    },
+    {
+      "label": "About",
+      "path": "/about",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": true,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Affiliate",
+      "path": "/affiliate",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": true,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Contact",
+      "path": "/contact",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": true,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Members Area",
+      "path": "/account",
+      "renderAs": "button",
+      "external": false,
+      "includeInNav": true,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Privacy Policy",
+      "path": "/privacy-policy",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": false,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Support",
+      "path": "/contact",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": false,
+      "footerSection": "quick-links",
+      "isLocked": false
+    },
+    {
+      "label": "Become a Member",
+      "path": "/account",
+      "renderAs": "menu-item",
+      "external": false,
+      "includeInNav": false,
+      "footerSection": "quick-links",
+      "isLocked": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "data": {
+    "user": {
+      "name": "Rob ATU",
+      "email": "rsjamborski@gmail.commm",
+      "postcode": "AB1 2XY",
+      "created_at": "2022-01-19T14:31:21.000000Z",
+      "updated_at": "2022-01-19T14:31:21.000000Z",
+      "details": {
+        "userLearningInterest": {
+          "learnExpand": true,
+          "learnBusiness": true,
+          "learnTrade": false,
+          "learnCryptoInvest": false,
+          "learnCrypto": true,
+          "learnCryptoNew": true
+        },
+        "userInvestmentList": {
+          "invest": true,
+          "joinVip": true,
+          "mentorship": true,
+          "message": "Long string comes here and that would be all..."
+        }
+      }
+    }
+  }
+}

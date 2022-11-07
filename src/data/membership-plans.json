@@ -1,0 +1,292 @@
+{
+  "tiers": [
+    {
+      "id": 0,
+      "label": "silver",
+      "price": 30,
+      "signUpFee": 0,
+      "description": "For beginners",
+      "tagline": "Beginners",
+      "payMonthlyUrl": "https://buy.stripe.com/8wMbJR0nPgc404o7sA",
+      "payJoinUrl": null
+    },
+    {
+      "id": 1,
+      "label": "gold",
+      "price": 200,
+      "signUpFee": 0,
+      "description": "For people willing to invest £1000+ worth of assets",
+      "tagline": "VIP",
+      "payMonthlyUrl": "https://buy.stripe.com/14k15dgmN4tmeZibIL",
+      "payJoinUrl": null
+    },
+    {
+      "id": 2,
+      "label": "platinum",
+      "price": 250,
+      "signUpFee": 750,
+      "description": "For people willing to invest between £5000 and £500'000 worth of assets",
+      "tagline": "Mentorship",
+      "payMonthlyUrl": "https://buy.stripe.com/6oEg07c6x9NGbN628d",
+      "payJoinUrl": "https://buy.stripe.com/3csg074E51haeZi6os"
+    }
+  ],
+  "features": [
+    {
+      "id": 0,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Free Access to 10+ Business Courses"
+    },
+    {
+      "id": 1,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Free Access to Crypto & NFT Courses"
+    },
+    {
+      "id": 2,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Free Access to Stock Courses"
+    },
+    {
+      "id": 3,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Tutorials explaining from ground up how to become an expert in crypto and stocks"
+    },
+    {
+      "id": 4,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Tutorials on step by step business development"
+    },
+    {
+      "id": 5,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Learn how to avoid getting scammed"
+    },
+    {
+      "id": 6,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Access to Discord community chat"
+    },
+    {
+      "id": 7,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Free access to Crypto Signals"
+    },
+    {
+      "id": 8,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Access to live trading"
+    },
+    {
+      "id": 9,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Access to daily watchlist"
+    },
+    {
+      "id": 10,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Access to daily technical analysis "
+    },
+    {
+      "id": 11,
+      "includedIn": [
+        0
+      ],
+      "isBold": false,
+      "label": "Access to all chat rooms except VIP List"
+    },
+    {
+      "id": 12,
+      "includedIn": [
+        1
+      ],
+      "isBold": true,
+      "label": "Everything in SILVER plus:"
+    },
+    {
+      "id": 13,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Automatically added to free Giveaways"
+    },
+    {
+      "id": 14,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Access to VIP List crypto signals "
+    },
+    {
+      "id": 15,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "How to trade NFTs"
+    },
+    {
+      "id": 16,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "How to use launch pads "
+    },
+    {
+      "id": 17,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "How to get into presales"
+    },
+    {
+      "id": 18,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Learn how to stake & yield "
+    },
+    {
+      "id": 19,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Learn how to take a defi loan then stake it"
+    },
+    {
+      "id": 20,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Access to 24/7 support"
+    },
+    {
+      "id": 21,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "1 hour a week group zoom calls discussing how to grow your portfolio"
+    },
+    {
+      "id": 22,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Twice a week group zoom calls discussing TA and trends and potential new huge projects"
+    },
+    {
+      "id": 23,
+      "includedIn": [
+        1
+      ],
+      "isBold": false,
+      "label": "Step by step instructions how to crypto mine"
+    },
+    {
+      "id": 24,
+      "includedIn": [
+        2
+      ],
+      "isBold": true,
+      "label": "Everything in GOLD plus:"
+    },
+    {
+      "id": 25,
+      "includedIn": [
+        2
+      ],
+      "isBold": true,
+      "label": "1-on-1 Personal Mentorship with Amio Talio"
+    },
+    {
+      "id": 26,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Looking in to your budget and analysing your risk levels and then decide what's the best way for you to expand your portfolio"
+    },
+    {
+      "id": 27,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Private zoom calls discussing your portfolio"
+    },
+    {
+      "id": 28,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Receive personal training on how to read charts and Trading Analytics"
+    },
+    {
+      "id": 29,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Check-ins"
+    },
+    {
+      "id": 30,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Help set up business goals for the next 6 months and create tailored strategy for its execution"
+    },
+    {
+      "id": 31,
+      "includedIn": [
+        2
+      ],
+      "isBold": false,
+      "label": "Access to Amio's personal number to call at anytime"
+    }
+  ]
+}

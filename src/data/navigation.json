@@ -28,15 +28,6 @@
       "isLocked": false
     },
     {
-      "label": "Affiliate",
-      "path": "/affiliate",
-      "renderAs": "menu-item",
-      "external": false,
-      "includeInNav": true,
-      "footerSection": "quick-links",
-      "isLocked": false
-    },
-    {
       "label": "Contact",
       "path": "/contact",
       "renderAs": "menu-item",

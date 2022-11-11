@@ -12,7 +12,7 @@ import SetupBilling from '../Forms/SetupBilling'
 
 import { loadStripe } from "@stripe/stripe-js"
 
-const stripePromise = loadStripe(`${process.env.GATSBY_STRIPE_PUBLIC_KEY}`)
+const stripePromise = loadStripe("pk_live_51K6wzwJjXO4lXGxvUzvnIn3rknHNb7nNMzGDbINQeRbfb02b7kgtMO0OwTmKhtOFzvCfG2eNM1bUeCapIn7XKfEO00g7f7bU2X")
 
 // dev constant
 const ENABLE_EDIT = true
@@ -141,7 +141,7 @@ export const MembershipTierField = ({ value }) => {
   }
 
   const getClientSecret = () => {
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/setupIntent`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/setupIntent`
     const config = {
       method: 'POST',
       headers: {

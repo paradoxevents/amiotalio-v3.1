@@ -90,22 +90,6 @@ const Nav = () => {
                   </li>
                 )
               }
-
-              if (item.external) {
-                return (
-                  <li key={i} className={item.isLocked ? 'locked' : ''}>
-                    <a
-                      onClick={() => toggleDrawer(false)}
-                      className={classnames(item.renderAs === "button" ? "btn btn-small" : null)}
-                      href={!item.isLocked && item.path}
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      {item.label}
-                    </a>
-                    {item.isLocked && <span className="lock-icon"><FaLock /></span>}
-                  </li>
-                )
-              }
             })}
         </ul>
       </nav>

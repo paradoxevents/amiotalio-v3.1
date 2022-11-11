@@ -136,7 +136,7 @@ const ContentListing = () => (
         <MdPeopleAlt />
       </div>
 
-      <h3 className='title'>Social Channels</h3>
+      <h3 className='title'>Private Telegram Group</h3>
       <p className="description">Join Social Channels and become a part of ATU community</p>
       <span className="hint">Click to access</span>
     </Link>
@@ -144,7 +144,7 @@ const ContentListing = () => (
       <div className="icon">
         <MdOndemandVideo />
       </div>
-      <h3 className='title'>Videos</h3>
+      <h3 className='title'>Crypto Course</h3>
       <p className="description">Watch Video Course Content</p>
       <span className="hint">Click to access</span>
     </Link>

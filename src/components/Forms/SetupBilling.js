@@ -108,7 +108,7 @@ const BillingStatus = ({ setupIntentResult = null, setSuccess, setError, setShow
     formData.append('payment_id', setupIntentId)
     formData.append('subscription_id', sub_id)
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/updatePaymentMethod`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/updatePaymentMethod`
     const config = {
       method: 'POST',
       headers: {

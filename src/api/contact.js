@@ -14,7 +14,7 @@ export const submitContactForm = formikData => {
     body: formData
   }
 
-  const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/contactUs`
+  const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/contactUs`
 
   return fetch(BASE_URL, config)
 }

@@ -12,7 +12,7 @@ export const UserProvider = ({ children }) => {
   const [isUserActive, setUserActive] = useState(null)
 
   const fetchUserData = () => {
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/userDetails`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/userDetails`
     const config = {
       method: 'POST',
       headers: {
@@ -25,7 +25,7 @@ export const UserProvider = ({ children }) => {
   }
 
   const fetchSubscriptionData = () => {
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/subscriptionStatus`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/subscriptionStatus`
     const config = {
       method: 'POST',
       headers: {
@@ -43,7 +43,7 @@ export const UserProvider = ({ children }) => {
         https://amiotaliouniversity.herokuapp.com/api/v1 
     */
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/socialLinks`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/socialLinks`
     const config = {
       method: 'GET',
       headers: {
@@ -74,7 +74,7 @@ export const UserProvider = ({ children }) => {
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/cancelSubscription`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/cancelSubscription`
 
     return fetch(BASE_URL, config)
   }
@@ -102,7 +102,7 @@ export const UserProvider = ({ children }) => {
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/updateUser`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/updateUser`
 
     return fetch(BASE_URL, config)
   }

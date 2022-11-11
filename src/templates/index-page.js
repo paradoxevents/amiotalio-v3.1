@@ -46,12 +46,9 @@ const HomePage = ({ data }) => {
         <div className="column align-center">
           {!user
             ? (
-              <Link
-              to={"/signup"}
-              className="btn btn-cta"
-              target="_blank" rel="noopener noreferrer">
-              Become a Member
-            </Link>)
+              <Link to="/signup">  
+                <Button className="btn btn-cta">Become a Member</Button>
+              </Link>)
             : <Link className="btn btn-cta btn-block" to="/account">Access Member Area</Link>
           }
           <p>
@@ -102,12 +99,11 @@ const HomePage = ({ data }) => {
           <p>
             The time is <strong>NOW</strong>. The person is <strong>YOU</strong>. Take the leap and in 3 months time you will not recognize the person you are today.<br /><br />
           </p>
-          <Link
-              to={"/signup"}
-              className="btn btn-cta"
-              target="_blank" rel="noopener noreferrer">
-              Join Now
-            </Link>
+          
+          <Link to="/signup">  
+            <Button className="btn btn-cta">Join Now</Button>
+          </Link>
+          
         </PageSection>
 
         <PageSection fullwidth>

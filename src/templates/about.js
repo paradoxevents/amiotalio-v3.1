@@ -12,8 +12,14 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <Seo title={frontmatter.pageTitle} />
-
-      <Page>
+      <Hero
+        picture={frontmatter.featuredImage}
+        picturePosition={frontmatter.imagePosition}
+        pageTitle={frontmatter.pageTitle}
+        tagline={frontmatter.tagline}
+        tagline2={frontmatter.tagline2}
+      />
+      <Page showBackBtn>
         <PageSection block center className="about-intro">
           <h2 className="center">
             Amio Talio Organization

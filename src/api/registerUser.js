@@ -19,7 +19,7 @@ export const registerUser = async formikData => {
   // mock API timeout
   await sleep(2000)
 
-  const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/register`
+  const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/register`
   const config = {
     method: "post",
     headers: {
@@ -40,10 +40,12 @@ export const isEmailUnique = async email => {
 
   formData.append('email', email)
 
-  let response = await fetch(`${process.env.GATSBY_API_ENDPOINT_BASEPATH}/newUser`, {
+  let response = await fetch(`https://amiotaliouniversity.herokuapp.com/api/v1/newUser`, {
     method: "POST",
+    mode: 'no-cors',
     headers: {
-      Accept: "application/json"
+      'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
     },
     body: formData
   })

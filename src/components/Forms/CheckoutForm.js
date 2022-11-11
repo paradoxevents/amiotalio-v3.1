@@ -35,7 +35,7 @@ export default function CheckoutForm({ subscriptionId, setSuccess, setActiveStep
     setMessage('')
     setLoading(true);
 
-    const BASE_URL_CONFIRM = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/updateSubscription`
+    const BASE_URL_CONFIRM = `https://amiotaliouniversity.herokuapp.com/api/v1/updateSubscription`
 
     // Create payment method and confirm payment intent.
     stripe.confirmPayment({

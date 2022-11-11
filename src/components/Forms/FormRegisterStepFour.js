@@ -17,7 +17,7 @@ import membershipData from '../../data/membership-plans.json'
 // This is a public sample test API key.
 // Don’t submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
-const stripePromise = loadStripe(`${process.env.GATSBY_STRIPE_PUBLIC_KEY}`)
+const stripePromise = loadStripe("pk_live_51K6wzwJjXO4lXGxvUzvnIn3rknHNb7nNMzGDbINQeRbfb02b7kgtMO0OwTmKhtOFzvCfG2eNM1bUeCapIn7XKfEO00g7f7bU2X")
 
 const FormRegisterStepThree = ({ show, setSuccess, setActiveStep, activeStep }) => {
   const { isLoading, setLoading } = useAppContext(false)
@@ -69,7 +69,7 @@ const FormRegisterStepThree = ({ show, setSuccess, setActiveStep, activeStep }) 
     formData.append('customer_id', customerId)
     formData.append('plan', planName)
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/createSubscription`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/createSubscription`
     const config = {
       method: "POST",
       headers: {

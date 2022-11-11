@@ -21,13 +21,15 @@ export const AuthProvider = ({ children }) => {
 
     const config = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
-        Accept: 'application/json'
+        'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       },
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/login`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/login`
     return fetch(BASE_URL, config)
   }
 
@@ -43,12 +45,14 @@ export const AuthProvider = ({ children }) => {
 
     const config = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
-        Accept: 'application/json',
+        'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       },
       body: formData
     }
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_BASEPATH}/getNewAccesToken`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/getNewAccesToken`
 
     setLoading(true)
     fetch(BASE_URL, config)
@@ -84,13 +88,15 @@ export const AuthProvider = ({ children }) => {
 
     const config = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
-        Accept: 'application/json'
+        'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       },
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_PASSWORD}/create`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/create`
     return fetch(BASE_URL, config)
   }
 
@@ -103,13 +109,15 @@ export const AuthProvider = ({ children }) => {
 
     const config = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
-        Accept: 'application/json'
+        'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       },
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_PASSWORD}/reset`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/v1/reset`
     return fetch(BASE_URL, config)
   }
 
@@ -121,13 +129,15 @@ export const AuthProvider = ({ children }) => {
 
     const config = {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
-        Accept: 'application/json'
+        'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
       },
       body: formData
     }
 
-    const BASE_URL = `${process.env.GATSBY_API_ENDPOINT_PASSWORD}/checkValidToken`
+    const BASE_URL = `https://amiotaliouniversity.herokuapp.com/api/password/checkValidToken`
     return fetch(BASE_URL, config)
   }
 
@@ -140,7 +150,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const { pathname } = getURL()
 
-    const noAuthRoutes = ['/confirmBilling', '/passwordReset', '/contact', '/blog', '/privacy-policy', '/affiliate', '/about', '/login', '/signup']
+    const noAuthRoutes = ['/confirmBilling', '/passwordReset', '/contact', '/blog', '/privacy-policy', '/about', '/login', '/signup']
     const doNotRedirect = noAuthRoutes.some(item => item === pathname)
 
     if (doNotRedirect) return
